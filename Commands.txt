@@ -1,0 +1,19 @@
+npm create vite@latest --- react installation via vite
+
+npm install -D tailwindcss postcss autoprefixer ----- npx tailwindcss init -p  -- tailwindcss installation
+
+                            At app.css
+
+@tailwind base;     ---  The base layer is for things like reset rules or default styles applied to plain HTML elements.
+@tailwind components; ---  The components layer is for class-based styles that you want to be able to override with utilities. 
+@tailwind utilities; --- The utilities layer is for small, single-purpose classes that should always take precedence 
+                        over any other styles.
+
+npm i react-router-dom  --- It allows developers to create dynamic and multi-page applications by mapping URLs to specific components.
+                            With React Router DOM, developers can create complex routing configurations that make it easy for users to 
+                            navigate their applications
+
+useState("") --- use two variables first variable use the value in useState by default and the updation of value done by using
+             the second variable
+
+preventDefault() --- refresh the page every time on form submission

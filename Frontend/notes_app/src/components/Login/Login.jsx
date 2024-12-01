@@ -19,7 +19,7 @@ const Login = () => {
       setError("Please Enter a Valid Email");
       return;
     }
-
+  
     setError("");
     if (!password) {
       setError("Please Enter a Password");

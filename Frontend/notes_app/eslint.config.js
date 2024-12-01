@@ -25,6 +25,8 @@ export default [
     },
     rules: {
       ...js.configs.recommended.rules,
+      "react/jsx-uses-vars": "error",
+      "react/jsx-uses-react": "error",
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
@@ -33,6 +35,19 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+
+      "no-unused-vars": [
+        "warn",
+        {
+          vars: "all",
+          varsIgnorePattern: "^_", 
+          args: "after-used",
+          argsIgnorePattern: "^_", 
+          ignoreRestSiblings: true, 
+        },
+      ],
+
+      "react/prop-types": "off",
     },
   },
-]
+];

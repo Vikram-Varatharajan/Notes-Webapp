@@ -9,18 +9,18 @@ import { ValidateEmail } from "../../utils/helper";
 const Signup = () => {
   const HandleSignup = async (e) => {
     e.preventDefault();
-
+    
+    if (!Name) {
+      setError("Please Enter a Name");
+      return;
+    }
+    setError("");
     if (!ValidateEmail(email)) {
       setError("Please Enter a Valid Email");
       return;
     }
     setError("");
 
-    if (!Name) {
-      setError("Please Enter a Name");
-      return;
-    }
-    setError("");
 
     if (!newpassword) {
       setError("Please Enter Password");
